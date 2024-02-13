@@ -102,10 +102,8 @@ class VideoVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
                                    expression: expression) { (task, error) in
             if let error = error {
                 print("Error uploading video: \(error.localizedDescription)")
-                // Handle error
             } else {
                 print("Video uploaded successfully!")
-                // Handle success
             }
         }
     }

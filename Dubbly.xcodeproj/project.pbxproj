@@ -1,0 +1,921 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18003A0A2B74A67600460936 /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18003A092B74A67600460936 /* ForgetPasswordVC.swift */; };
+		18003A0C2B74A85900460936 /* OtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18003A0B2B74A85900460936 /* OtpVC.swift */; };
+		181637842B74B803002F4151 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181637832B74B803002F4151 /* VideoVC.swift */; };
+		181637862B74B934002F4151 /* UploadVideoFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181637852B74B934002F4151 /* UploadVideoFileVC.swift */; };
+		1816378A2B74C5B5002F4151 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181637892B74C5B5002F4151 /* RegisterVC.swift */; };
+		185057B82B76516900FCECC6 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185057B72B76516900FCECC6 /* HistoryVC.swift */; };
+		1893F2E42B7A391E0042B3FA /* AWSAPIGateway in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2E32B7A391E0042B3FA /* AWSAPIGateway */; };
+		1893F2E62B7A391E0042B3FA /* AWSAppleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2E52B7A391E0042B3FA /* AWSAppleSignIn */; };
+		1893F2E82B7A391E0042B3FA /* AWSAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2E72B7A391E0042B3FA /* AWSAuthCore */; };
+		1893F2EA2B7A391E0042B3FA /* AWSAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2E92B7A391E0042B3FA /* AWSAuthUI */; };
+		1893F2EC2B7A391E0042B3FA /* AWSAutoScaling in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2EB2B7A391E0042B3FA /* AWSAutoScaling */; };
+		1893F2EE2B7A391E0042B3FA /* AWSChimeSDKIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2ED2B7A391E0042B3FA /* AWSChimeSDKIdentity */; };
+		1893F2F02B7A391E0042B3FA /* AWSChimeSDKMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2EF2B7A391E0042B3FA /* AWSChimeSDKMessaging */; };
+		1893F2F22B7A391E0042B3FA /* AWSCloudWatch in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2F12B7A391E0042B3FA /* AWSCloudWatch */; };
+		1893F2F42B7A391E0042B3FA /* AWSCognitoAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2F32B7A391E0042B3FA /* AWSCognitoAuth */; };
+		1893F2F62B7A391E0042B3FA /* AWSCognitoIdentityProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2F52B7A391E0042B3FA /* AWSCognitoIdentityProvider */; };
+		1893F2F82B7A391E0042B3FA /* AWSCognitoIdentityProviderASF in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2F72B7A391E0042B3FA /* AWSCognitoIdentityProviderASF */; };
+		1893F2FA2B7A391E0042B3FA /* AWSComprehend in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2F92B7A391E0042B3FA /* AWSComprehend */; };
+		1893F2FC2B7A391E0042B3FA /* AWSConnect in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2FB2B7A391E0042B3FA /* AWSConnect */; };
+		1893F2FE2B7A391E0042B3FA /* AWSConnectParticipant in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2FD2B7A391E0042B3FA /* AWSConnectParticipant */; };
+		1893F3002B7A391E0042B3FA /* AWSCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F2FF2B7A391E0042B3FA /* AWSCore */; };
+		1893F3022B7A391E0042B3FA /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3012B7A391E0042B3FA /* AWSDynamoDB */; };
+		1893F3042B7A391E0042B3FA /* AWSEC2 in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3032B7A391E0042B3FA /* AWSEC2 */; };
+		1893F3062B7A391E0042B3FA /* AWSElasticLoadBalancing in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3052B7A391E0042B3FA /* AWSElasticLoadBalancing */; };
+		1893F3082B7A391E0042B3FA /* AWSFacebookSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3072B7A391E0042B3FA /* AWSFacebookSignIn */; };
+		1893F30A2B7A391E0042B3FA /* AWSGoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3092B7A391E0042B3FA /* AWSGoogleSignIn */; };
+		1893F30C2B7A391E0042B3FA /* AWSIoT in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F30B2B7A391E0042B3FA /* AWSIoT */; };
+		1893F30E2B7A391E0042B3FA /* AWSKMS in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F30D2B7A391E0042B3FA /* AWSKMS */; };
+		1893F3102B7A391E0042B3FA /* AWSKinesis in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F30F2B7A391E0042B3FA /* AWSKinesis */; };
+		1893F3122B7A391E0042B3FA /* AWSKinesisVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3112B7A391E0042B3FA /* AWSKinesisVideo */; };
+		1893F3142B7A391E0042B3FA /* AWSKinesisVideoArchivedMedia in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3132B7A391E0042B3FA /* AWSKinesisVideoArchivedMedia */; };
+		1893F3162B7A391E0042B3FA /* AWSKinesisVideoSignaling in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3152B7A391E0042B3FA /* AWSKinesisVideoSignaling */; };
+		1893F3182B7A391E0042B3FA /* AWSKinesisVideoWebRTCStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3172B7A391E0042B3FA /* AWSKinesisVideoWebRTCStorage */; };
+		1893F31A2B7A391E0042B3FA /* AWSLambda in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3192B7A391E0042B3FA /* AWSLambda */; };
+		1893F31C2B7A391E0042B3FA /* AWSLex in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F31B2B7A391E0042B3FA /* AWSLex */; };
+		1893F31E2B7A391E0042B3FA /* AWSLocationXCF in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F31D2B7A391E0042B3FA /* AWSLocationXCF */; };
+		1893F3202B7A391E0042B3FA /* AWSLogs in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F31F2B7A391E0042B3FA /* AWSLogs */; };
+		1893F3222B7A391E0042B3FA /* AWSMachineLearning in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3212B7A391E0042B3FA /* AWSMachineLearning */; };
+		1893F3242B7A391E0042B3FA /* AWSMobileClientXCF in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3232B7A391E0042B3FA /* AWSMobileClientXCF */; };
+		1893F3262B7A391E0042B3FA /* AWSPinpoint in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3252B7A391E0042B3FA /* AWSPinpoint */; };
+		1893F3282B7A391E0042B3FA /* AWSPolly in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3272B7A391E0042B3FA /* AWSPolly */; };
+		1893F32A2B7A391E0042B3FA /* AWSRekognition in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3292B7A391E0042B3FA /* AWSRekognition */; };
+		1893F32C2B7A391E0042B3FA /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F32B2B7A391E0042B3FA /* AWSS3 */; };
+		1893F32E2B7A391E0042B3FA /* AWSSES in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F32D2B7A391E0042B3FA /* AWSSES */; };
+		1893F3302B7A391E0042B3FA /* AWSSNS in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F32F2B7A391E0042B3FA /* AWSSNS */; };
+		1893F3322B7A391E0042B3FA /* AWSSQS in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3312B7A391E0042B3FA /* AWSSQS */; };
+		1893F3342B7A391E0042B3FA /* AWSSageMakerRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3332B7A391E0042B3FA /* AWSSageMakerRuntime */; };
+		1893F3362B7A391E0042B3FA /* AWSSimpleDB in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3352B7A391E0042B3FA /* AWSSimpleDB */; };
+		1893F3382B7A391E0042B3FA /* AWSTextract in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3372B7A391E0042B3FA /* AWSTextract */; };
+		1893F33A2B7A391E0042B3FA /* AWSTranscribe in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F3392B7A391E0042B3FA /* AWSTranscribe */; };
+		1893F33C2B7A391E0042B3FA /* AWSTranscribeStreaming in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F33B2B7A391E0042B3FA /* AWSTranscribeStreaming */; };
+		1893F33E2B7A391E0042B3FA /* AWSTranslate in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F33D2B7A391E0042B3FA /* AWSTranslate */; };
+		1893F3402B7A391E0042B3FA /* AWSUserPoolsSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1893F33F2B7A391E0042B3FA /* AWSUserPoolsSignIn */; };
+		18ADADB92B74A26000F8624E /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ADADB82B74A26000F8624E /* AboutVC.swift */; };
+		18B751CF2B79DD2600E3567B /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B751CE2B79DD2600E3567B /* LoginModel.swift */; };
+		18B751D12B79DF2000E3567B /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B751D02B79DF2000E3567B /* RegisterModel.swift */; };
+		18B751D42B79E00800E3567B /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 18B751D32B79E00800E3567B /* Toast */; };
+		18B751D72B79E46300E3567B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B751D62B79E46300E3567B /* APIManager.swift */; };
+		18B751DA2B79E4A700E3567B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 18B751D92B79E4A700E3567B /* Alamofire */; };
+		18B751DC2B79E61600E3567B /* OTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B751DB2B79E61600E3567B /* OTPModel.swift */; };
+		18B751DE2B79E9F500E3567B /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B751DD2B79E9F500E3567B /* AboutModel.swift */; };
+		18FD85C32B760984007779BA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD85C22B760984007779BA /* ProfileVC.swift */; };
+		283756F92B77D32900018D9E /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283756F82B77D32800018D9E /* ResetPasswordVC.swift */; };
+		283756FB2B77D58D00018D9E /* RateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283756FA2B77D58D00018D9E /* RateVC.swift */; };
+		283756FD2B77D66F00018D9E /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283756FC2B77D66F00018D9E /* MusicVC.swift */; };
+		283B9BE32B77EE0200BF988D /* TermsAndConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B9BE22B77EE0200BF988D /* TermsAndConditionsVC.swift */; };
+		283B9BE52B77EEAE00BF988D /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B9BE42B77EEAE00BF988D /* PrivacyPolicyVC.swift */; };
+		283B9BE72B77EED400BF988D /* DisclaimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283B9BE62B77EED400BF988D /* DisclaimerVC.swift */; };
+		287838542B75688E00D7C073 /* SegmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287838532B75688E00D7C073 /* SegmentVC.swift */; };
+		28C1E77C2B77ADAC00BCF208 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1E77B2B77ADAC00BCF208 /* Loader.swift */; };
+		28C1E77E2B77AFBD00BCF208 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1E77D2B77AFBC00BCF208 /* Constant.swift */; };
+		28C1E7802B77C7EF00BCF208 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1E77F2B77C7EE00BCF208 /* Padding.swift */; };
+		2F7F53722B737FD600BAB271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F53712B737FD600BAB271 /* AppDelegate.swift */; };
+		2F7F53742B737FD600BAB271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F53732B737FD600BAB271 /* SceneDelegate.swift */; };
+		2F7F53762B737FD600BAB271 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F53752B737FD600BAB271 /* LoginVC.swift */; };
+		2F7F53792B737FD600BAB271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F53772B737FD600BAB271 /* Main.storyboard */; };
+		2F7F537B2B737FD900BAB271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F537A2B737FD900BAB271 /* Assets.xcassets */; };
+		2F7F537E2B737FD900BAB271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F537C2B737FD900BAB271 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18003A092B74A67600460936 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
+		18003A0B2B74A85900460936 /* OtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpVC.swift; sourceTree = "<group>"; };
+		181637832B74B803002F4151 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		181637852B74B934002F4151 /* UploadVideoFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideoFileVC.swift; sourceTree = "<group>"; };
+		181637892B74C5B5002F4151 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		185057B72B76516900FCECC6 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		18ADADB82B74A26000F8624E /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		18B751CE2B79DD2600E3567B /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		18B751D02B79DF2000E3567B /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		18B751D62B79E46300E3567B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		18B751DB2B79E61600E3567B /* OTPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPModel.swift; sourceTree = "<group>"; };
+		18B751DD2B79E9F500E3567B /* AboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
+		18FD85C22B760984007779BA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		283756F82B77D32800018D9E /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
+		283756FA2B77D58D00018D9E /* RateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateVC.swift; sourceTree = "<group>"; };
+		283756FC2B77D66F00018D9E /* MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
+		283B9BE22B77EE0200BF988D /* TermsAndConditionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsVC.swift; sourceTree = "<group>"; };
+		283B9BE42B77EEAE00BF988D /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
+		283B9BE62B77EED400BF988D /* DisclaimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerVC.swift; sourceTree = "<group>"; };
+		287838532B75688E00D7C073 /* SegmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentVC.swift; sourceTree = "<group>"; };
+		28C1E77B2B77ADAC00BCF208 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		28C1E77D2B77AFBC00BCF208 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		28C1E77F2B77C7EE00BCF208 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		2F7F536E2B737FD600BAB271 /* Dubbly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dubbly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F7F53712B737FD600BAB271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F7F53732B737FD600BAB271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2F7F53752B737FD600BAB271 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2F7F53782B737FD600BAB271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F7F537A2B737FD900BAB271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F7F537D2B737FD900BAB271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F7F537F2B737FD900BAB271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F7F536B2B737FD600BAB271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1893F3202B7A391E0042B3FA /* AWSLogs in Frameworks */,
+				1893F31C2B7A391E0042B3FA /* AWSLex in Frameworks */,
+				1893F33C2B7A391E0042B3FA /* AWSTranscribeStreaming in Frameworks */,
+				1893F3002B7A391E0042B3FA /* AWSCore in Frameworks */,
+				1893F32C2B7A391E0042B3FA /* AWSS3 in Frameworks */,
+				1893F3242B7A391E0042B3FA /* AWSMobileClientXCF in Frameworks */,
+				1893F3382B7A391E0042B3FA /* AWSTextract in Frameworks */,
+				1893F2F22B7A391E0042B3FA /* AWSCloudWatch in Frameworks */,
+				1893F3362B7A391E0042B3FA /* AWSSimpleDB in Frameworks */,
+				1893F2FA2B7A391E0042B3FA /* AWSComprehend in Frameworks */,
+				1893F3342B7A391E0042B3FA /* AWSSageMakerRuntime in Frameworks */,
+				1893F2EE2B7A391E0042B3FA /* AWSChimeSDKIdentity in Frameworks */,
+				1893F3162B7A391E0042B3FA /* AWSKinesisVideoSignaling in Frameworks */,
+				1893F30E2B7A391E0042B3FA /* AWSKMS in Frameworks */,
+				1893F33A2B7A391E0042B3FA /* AWSTranscribe in Frameworks */,
+				1893F3022B7A391E0042B3FA /* AWSDynamoDB in Frameworks */,
+				1893F2EA2B7A391E0042B3FA /* AWSAuthUI in Frameworks */,
+				1893F3062B7A391E0042B3FA /* AWSElasticLoadBalancing in Frameworks */,
+				1893F2E42B7A391E0042B3FA /* AWSAPIGateway in Frameworks */,
+				18B751D42B79E00800E3567B /* Toast in Frameworks */,
+				1893F2F62B7A391E0042B3FA /* AWSCognitoIdentityProvider in Frameworks */,
+				1893F30C2B7A391E0042B3FA /* AWSIoT in Frameworks */,
+				18B751DA2B79E4A700E3567B /* Alamofire in Frameworks */,
+				1893F3302B7A391E0042B3FA /* AWSSNS in Frameworks */,
+				1893F30A2B7A391E0042B3FA /* AWSGoogleSignIn in Frameworks */,
+				1893F32A2B7A391E0042B3FA /* AWSRekognition in Frameworks */,
+				1893F32E2B7A391E0042B3FA /* AWSSES in Frameworks */,
+				1893F2FC2B7A391E0042B3FA /* AWSConnect in Frameworks */,
+				1893F3222B7A391E0042B3FA /* AWSMachineLearning in Frameworks */,
+				1893F3122B7A391E0042B3FA /* AWSKinesisVideo in Frameworks */,
+				1893F2FE2B7A391E0042B3FA /* AWSConnectParticipant in Frameworks */,
+				1893F31E2B7A391E0042B3FA /* AWSLocationXCF in Frameworks */,
+				1893F2E82B7A391E0042B3FA /* AWSAuthCore in Frameworks */,
+				1893F3142B7A391E0042B3FA /* AWSKinesisVideoArchivedMedia in Frameworks */,
+				1893F3042B7A391E0042B3FA /* AWSEC2 in Frameworks */,
+				1893F3322B7A391E0042B3FA /* AWSSQS in Frameworks */,
+				1893F3402B7A391E0042B3FA /* AWSUserPoolsSignIn in Frameworks */,
+				1893F31A2B7A391E0042B3FA /* AWSLambda in Frameworks */,
+				1893F33E2B7A391E0042B3FA /* AWSTranslate in Frameworks */,
+				1893F3262B7A391E0042B3FA /* AWSPinpoint in Frameworks */,
+				1893F3102B7A391E0042B3FA /* AWSKinesis in Frameworks */,
+				1893F3082B7A391E0042B3FA /* AWSFacebookSignIn in Frameworks */,
+				1893F2F42B7A391E0042B3FA /* AWSCognitoAuth in Frameworks */,
+				1893F2F02B7A391E0042B3FA /* AWSChimeSDKMessaging in Frameworks */,
+				1893F2EC2B7A391E0042B3FA /* AWSAutoScaling in Frameworks */,
+				1893F2F82B7A391E0042B3FA /* AWSCognitoIdentityProviderASF in Frameworks */,
+				1893F3182B7A391E0042B3FA /* AWSKinesisVideoWebRTCStorage in Frameworks */,
+				1893F3282B7A391E0042B3FA /* AWSPolly in Frameworks */,
+				1893F2E62B7A391E0042B3FA /* AWSAppleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		285522252B77586B007364AE /* All Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F53752B737FD600BAB271 /* LoginVC.swift */,
+				181637892B74C5B5002F4151 /* RegisterVC.swift */,
+				18ADADB82B74A26000F8624E /* AboutVC.swift */,
+				18003A0B2B74A85900460936 /* OtpVC.swift */,
+				18003A092B74A67600460936 /* ForgetPasswordVC.swift */,
+				181637832B74B803002F4151 /* VideoVC.swift */,
+				181637852B74B934002F4151 /* UploadVideoFileVC.swift */,
+				18FD85C22B760984007779BA /* ProfileVC.swift */,
+				185057B72B76516900FCECC6 /* HistoryVC.swift */,
+				283756F82B77D32800018D9E /* ResetPasswordVC.swift */,
+				283756FA2B77D58D00018D9E /* RateVC.swift */,
+				283756FC2B77D66F00018D9E /* MusicVC.swift */,
+				283B9BE22B77EE0200BF988D /* TermsAndConditionsVC.swift */,
+				283B9BE42B77EEAE00BF988D /* PrivacyPolicyVC.swift */,
+				283B9BE62B77EED400BF988D /* DisclaimerVC.swift */,
+			);
+			path = "All Controllers";
+			sourceTree = "<group>";
+		};
+		285522262B7758B1007364AE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F53772B737FD600BAB271 /* Main.storyboard */,
+				2F7F537C2B737FD900BAB271 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		28C1E7792B77AC6B00BCF208 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18B751CE2B79DD2600E3567B /* LoginModel.swift */,
+				18B751D02B79DF2000E3567B /* RegisterModel.swift */,
+				18B751DB2B79E61600E3567B /* OTPModel.swift */,
+				18B751DD2B79E9F500E3567B /* AboutModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28C1E77A2B77AC7C00BCF208 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				28C1E77B2B77ADAC00BCF208 /* Loader.swift */,
+				28C1E77D2B77AFBC00BCF208 /* Constant.swift */,
+				28C1E77F2B77C7EE00BCF208 /* Padding.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		2F7F53652B737FD600BAB271 = {
+			isa = PBXGroup;
+			children = (
+				2F7F53702B737FD600BAB271 /* Dubbly */,
+				2F7F536F2B737FD600BAB271 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F7F536F2B737FD600BAB271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F536E2B737FD600BAB271 /* Dubbly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F7F53702B737FD600BAB271 /* Dubbly */ = {
+			isa = PBXGroup;
+			children = (
+				28C1E77A2B77AC7C00BCF208 /* Helper */,
+				2F7F53712B737FD600BAB271 /* AppDelegate.swift */,
+				2F7F53732B737FD600BAB271 /* SceneDelegate.swift */,
+				28C1E7792B77AC6B00BCF208 /* Model */,
+				285522252B77586B007364AE /* All Controllers */,
+				285522262B7758B1007364AE /* Storyboard */,
+				2F7F537A2B737FD900BAB271 /* Assets.xcassets */,
+				2F7F537F2B737FD900BAB271 /* Info.plist */,
+				287838532B75688E00D7C073 /* SegmentVC.swift */,
+				18B751D62B79E46300E3567B /* APIManager.swift */,
+			);
+			path = Dubbly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F7F536D2B737FD600BAB271 /* Dubbly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F7F53822B737FD900BAB271 /* Build configuration list for PBXNativeTarget "Dubbly" */;
+			buildPhases = (
+				2F7F536A2B737FD600BAB271 /* Sources */,
+				2F7F536B2B737FD600BAB271 /* Frameworks */,
+				2F7F536C2B737FD600BAB271 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dubbly;
+			packageProductDependencies = (
+				18B751D32B79E00800E3567B /* Toast */,
+				18B751D92B79E4A700E3567B /* Alamofire */,
+				1893F2E32B7A391E0042B3FA /* AWSAPIGateway */,
+				1893F2E52B7A391E0042B3FA /* AWSAppleSignIn */,
+				1893F2E72B7A391E0042B3FA /* AWSAuthCore */,
+				1893F2E92B7A391E0042B3FA /* AWSAuthUI */,
+				1893F2EB2B7A391E0042B3FA /* AWSAutoScaling */,
+				1893F2ED2B7A391E0042B3FA /* AWSChimeSDKIdentity */,
+				1893F2EF2B7A391E0042B3FA /* AWSChimeSDKMessaging */,
+				1893F2F12B7A391E0042B3FA /* AWSCloudWatch */,
+				1893F2F32B7A391E0042B3FA /* AWSCognitoAuth */,
+				1893F2F52B7A391E0042B3FA /* AWSCognitoIdentityProvider */,
+				1893F2F72B7A391E0042B3FA /* AWSCognitoIdentityProviderASF */,
+				1893F2F92B7A391E0042B3FA /* AWSComprehend */,
+				1893F2FB2B7A391E0042B3FA /* AWSConnect */,
+				1893F2FD2B7A391E0042B3FA /* AWSConnectParticipant */,
+				1893F2FF2B7A391E0042B3FA /* AWSCore */,
+				1893F3012B7A391E0042B3FA /* AWSDynamoDB */,
+				1893F3032B7A391E0042B3FA /* AWSEC2 */,
+				1893F3052B7A391E0042B3FA /* AWSElasticLoadBalancing */,
+				1893F3072B7A391E0042B3FA /* AWSFacebookSignIn */,
+				1893F3092B7A391E0042B3FA /* AWSGoogleSignIn */,
+				1893F30B2B7A391E0042B3FA /* AWSIoT */,
+				1893F30D2B7A391E0042B3FA /* AWSKMS */,
+				1893F30F2B7A391E0042B3FA /* AWSKinesis */,
+				1893F3112B7A391E0042B3FA /* AWSKinesisVideo */,
+				1893F3132B7A391E0042B3FA /* AWSKinesisVideoArchivedMedia */,
+				1893F3152B7A391E0042B3FA /* AWSKinesisVideoSignaling */,
+				1893F3172B7A391E0042B3FA /* AWSKinesisVideoWebRTCStorage */,
+				1893F3192B7A391E0042B3FA /* AWSLambda */,
+				1893F31B2B7A391E0042B3FA /* AWSLex */,
+				1893F31D2B7A391E0042B3FA /* AWSLocationXCF */,
+				1893F31F2B7A391E0042B3FA /* AWSLogs */,
+				1893F3212B7A391E0042B3FA /* AWSMachineLearning */,
+				1893F3232B7A391E0042B3FA /* AWSMobileClientXCF */,
+				1893F3252B7A391E0042B3FA /* AWSPinpoint */,
+				1893F3272B7A391E0042B3FA /* AWSPolly */,
+				1893F3292B7A391E0042B3FA /* AWSRekognition */,
+				1893F32B2B7A391E0042B3FA /* AWSS3 */,
+				1893F32D2B7A391E0042B3FA /* AWSSES */,
+				1893F32F2B7A391E0042B3FA /* AWSSNS */,
+				1893F3312B7A391E0042B3FA /* AWSSQS */,
+				1893F3332B7A391E0042B3FA /* AWSSageMakerRuntime */,
+				1893F3352B7A391E0042B3FA /* AWSSimpleDB */,
+				1893F3372B7A391E0042B3FA /* AWSTextract */,
+				1893F3392B7A391E0042B3FA /* AWSTranscribe */,
+				1893F33B2B7A391E0042B3FA /* AWSTranscribeStreaming */,
+				1893F33D2B7A391E0042B3FA /* AWSTranslate */,
+				1893F33F2B7A391E0042B3FA /* AWSUserPoolsSignIn */,
+			);
+			productName = Dubbly;
+			productReference = 2F7F536E2B737FD600BAB271 /* Dubbly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F7F53662B737FD600BAB271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					2F7F536D2B737FD600BAB271 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F7F53692B737FD600BAB271 /* Build configuration list for PBXProject "Dubbly" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F7F53652B737FD600BAB271;
+			packageReferences = (
+				18B751D22B79E00800E3567B /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				18B751D82B79E4A700E3567B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+			);
+			productRefGroup = 2F7F536F2B737FD600BAB271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F7F536D2B737FD600BAB271 /* Dubbly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F7F536C2B737FD600BAB271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7F537E2B737FD900BAB271 /* LaunchScreen.storyboard in Resources */,
+				2F7F537B2B737FD900BAB271 /* Assets.xcassets in Resources */,
+				2F7F53792B737FD600BAB271 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F7F536A2B737FD600BAB271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B751D72B79E46300E3567B /* APIManager.swift in Sources */,
+				18B751DE2B79E9F500E3567B /* AboutModel.swift in Sources */,
+				18003A0C2B74A85900460936 /* OtpVC.swift in Sources */,
+				18B751D12B79DF2000E3567B /* RegisterModel.swift in Sources */,
+				185057B82B76516900FCECC6 /* HistoryVC.swift in Sources */,
+				18ADADB92B74A26000F8624E /* AboutVC.swift in Sources */,
+				18B751CF2B79DD2600E3567B /* LoginModel.swift in Sources */,
+				2F7F53762B737FD600BAB271 /* LoginVC.swift in Sources */,
+				2F7F53722B737FD600BAB271 /* AppDelegate.swift in Sources */,
+				283B9BE32B77EE0200BF988D /* TermsAndConditionsVC.swift in Sources */,
+				181637842B74B803002F4151 /* VideoVC.swift in Sources */,
+				18003A0A2B74A67600460936 /* ForgetPasswordVC.swift in Sources */,
+				28C1E77E2B77AFBD00BCF208 /* Constant.swift in Sources */,
+				1816378A2B74C5B5002F4151 /* RegisterVC.swift in Sources */,
+				18B751DC2B79E61600E3567B /* OTPModel.swift in Sources */,
+				2F7F53742B737FD600BAB271 /* SceneDelegate.swift in Sources */,
+				283B9BE52B77EEAE00BF988D /* PrivacyPolicyVC.swift in Sources */,
+				28C1E77C2B77ADAC00BCF208 /* Loader.swift in Sources */,
+				28C1E7802B77C7EF00BCF208 /* Padding.swift in Sources */,
+				283756FB2B77D58D00018D9E /* RateVC.swift in Sources */,
+				287838542B75688E00D7C073 /* SegmentVC.swift in Sources */,
+				283756FD2B77D66F00018D9E /* MusicVC.swift in Sources */,
+				18FD85C32B760984007779BA /* ProfileVC.swift in Sources */,
+				181637862B74B934002F4151 /* UploadVideoFileVC.swift in Sources */,
+				283756F92B77D32900018D9E /* ResetPasswordVC.swift in Sources */,
+				283B9BE72B77EED400BF988D /* DisclaimerVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F7F53772B737FD600BAB271 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7F53782B737FD600BAB271 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F7F537C2B737FD900BAB271 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F7F537D2B737FD900BAB271 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F7F53802B737FD900BAB271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F7F53812B737FD900BAB271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F7F53832B737FD900BAB271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NV72JB2SDD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dubbly/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajath.Dubbly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F7F53842B737FD900BAB271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NV72JB2SDD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dubbly/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ajath.Dubbly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F7F53692B737FD600BAB271 /* Build configuration list for PBXProject "Dubbly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7F53802B737FD900BAB271 /* Debug */,
+				2F7F53812B737FD900BAB271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F7F53822B737FD900BAB271 /* Build configuration list for PBXNativeTarget "Dubbly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F7F53832B737FD900BAB271 /* Debug */,
+				2F7F53842B737FD900BAB271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		18B751D22B79E00800E3567B /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		18B751D82B79E4A700E3567B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1893F2E32B7A391E0042B3FA /* AWSAPIGateway */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSAPIGateway;
+		};
+		1893F2E52B7A391E0042B3FA /* AWSAppleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSAppleSignIn;
+		};
+		1893F2E72B7A391E0042B3FA /* AWSAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSAuthCore;
+		};
+		1893F2E92B7A391E0042B3FA /* AWSAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSAuthUI;
+		};
+		1893F2EB2B7A391E0042B3FA /* AWSAutoScaling */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSAutoScaling;
+		};
+		1893F2ED2B7A391E0042B3FA /* AWSChimeSDKIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSChimeSDKIdentity;
+		};
+		1893F2EF2B7A391E0042B3FA /* AWSChimeSDKMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSChimeSDKMessaging;
+		};
+		1893F2F12B7A391E0042B3FA /* AWSCloudWatch */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCloudWatch;
+		};
+		1893F2F32B7A391E0042B3FA /* AWSCognitoAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCognitoAuth;
+		};
+		1893F2F52B7A391E0042B3FA /* AWSCognitoIdentityProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCognitoIdentityProvider;
+		};
+		1893F2F72B7A391E0042B3FA /* AWSCognitoIdentityProviderASF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCognitoIdentityProviderASF;
+		};
+		1893F2F92B7A391E0042B3FA /* AWSComprehend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSComprehend;
+		};
+		1893F2FB2B7A391E0042B3FA /* AWSConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSConnect;
+		};
+		1893F2FD2B7A391E0042B3FA /* AWSConnectParticipant */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSConnectParticipant;
+		};
+		1893F2FF2B7A391E0042B3FA /* AWSCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCore;
+		};
+		1893F3012B7A391E0042B3FA /* AWSDynamoDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSDynamoDB;
+		};
+		1893F3032B7A391E0042B3FA /* AWSEC2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSEC2;
+		};
+		1893F3052B7A391E0042B3FA /* AWSElasticLoadBalancing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSElasticLoadBalancing;
+		};
+		1893F3072B7A391E0042B3FA /* AWSFacebookSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSFacebookSignIn;
+		};
+		1893F3092B7A391E0042B3FA /* AWSGoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSGoogleSignIn;
+		};
+		1893F30B2B7A391E0042B3FA /* AWSIoT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSIoT;
+		};
+		1893F30D2B7A391E0042B3FA /* AWSKMS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSKMS;
+		};
+		1893F30F2B7A391E0042B3FA /* AWSKinesis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSKinesis;
+		};
+		1893F3112B7A391E0042B3FA /* AWSKinesisVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSKinesisVideo;
+		};
+		1893F3132B7A391E0042B3FA /* AWSKinesisVideoArchivedMedia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSKinesisVideoArchivedMedia;
+		};
+		1893F3152B7A391E0042B3FA /* AWSKinesisVideoSignaling */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSKinesisVideoSignaling;
+		};
+		1893F3172B7A391E0042B3FA /* AWSKinesisVideoWebRTCStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSKinesisVideoWebRTCStorage;
+		};
+		1893F3192B7A391E0042B3FA /* AWSLambda */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSLambda;
+		};
+		1893F31B2B7A391E0042B3FA /* AWSLex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSLex;
+		};
+		1893F31D2B7A391E0042B3FA /* AWSLocationXCF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSLocationXCF;
+		};
+		1893F31F2B7A391E0042B3FA /* AWSLogs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSLogs;
+		};
+		1893F3212B7A391E0042B3FA /* AWSMachineLearning */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSMachineLearning;
+		};
+		1893F3232B7A391E0042B3FA /* AWSMobileClientXCF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSMobileClientXCF;
+		};
+		1893F3252B7A391E0042B3FA /* AWSPinpoint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSPinpoint;
+		};
+		1893F3272B7A391E0042B3FA /* AWSPolly */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSPolly;
+		};
+		1893F3292B7A391E0042B3FA /* AWSRekognition */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSRekognition;
+		};
+		1893F32B2B7A391E0042B3FA /* AWSS3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSS3;
+		};
+		1893F32D2B7A391E0042B3FA /* AWSSES */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSSES;
+		};
+		1893F32F2B7A391E0042B3FA /* AWSSNS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSSNS;
+		};
+		1893F3312B7A391E0042B3FA /* AWSSQS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSSQS;
+		};
+		1893F3332B7A391E0042B3FA /* AWSSageMakerRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSSageMakerRuntime;
+		};
+		1893F3352B7A391E0042B3FA /* AWSSimpleDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSSimpleDB;
+		};
+		1893F3372B7A391E0042B3FA /* AWSTextract */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSTextract;
+		};
+		1893F3392B7A391E0042B3FA /* AWSTranscribe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSTranscribe;
+		};
+		1893F33B2B7A391E0042B3FA /* AWSTranscribeStreaming */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSTranscribeStreaming;
+		};
+		1893F33D2B7A391E0042B3FA /* AWSTranslate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSTranslate;
+		};
+		1893F33F2B7A391E0042B3FA /* AWSUserPoolsSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSUserPoolsSignIn;
+		};
+		18B751D32B79E00800E3567B /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18B751D22B79E00800E3567B /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		18B751D92B79E4A700E3567B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18B751D82B79E4A700E3567B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2F7F53662B737FD600BAB271 /* Project object */;
+}

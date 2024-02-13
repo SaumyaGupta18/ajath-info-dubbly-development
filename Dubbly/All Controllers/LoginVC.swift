@@ -22,7 +22,9 @@ class LoginVC: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     
     let padding: CGFloat = 30.0
+//    let linkedinHelper = LinkedinSwiftHelper(configuration: LinkedinSwiftConfiguration(clientId: "YOUR_CLIENT_ID", clientSecret: "YOUR_CLIENT_SECRET", state: "YOUR_STATE", permissions: ["r_liteprofile", "r_emailaddress"], redirectUrl: "YOUR_REDIRECT_URL"))
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // https://github.com/swift-aws/aws-sdk-swift.git
@@ -130,7 +132,13 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func linkedInSignInBtn_Action(_ sender: UIButton) {
-        
+        linkedinHelper.authorizeSuccess({ (lsToken) in
+             print("Login success with LinkedIn. Token: \(lsToken)")
+         }, error: { (error) in
+             print("Encountered error with LinkedIn login: \(error.localizedDescription)")
+         }, cancel: {
+             print("User cancelled LinkedIn login")
+         })
     }
     
     @IBAction func starFreeTrialBtn_Action(_ sender: UIButton) {
