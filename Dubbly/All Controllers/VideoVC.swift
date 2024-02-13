@@ -92,7 +92,7 @@ class VideoVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCo
         }
 
         let transferUtility = AWSS3TransferUtility.default()
-        let bucketName = "your-bucket-name"
+        let bucketName = "S3-bucket"
         let key = "videos/\(UUID().uuidString).mp4"
 
         transferUtility.uploadFile(videoURL,
