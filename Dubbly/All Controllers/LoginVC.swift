@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import GoogleSignIn
 
 class LoginVC: UIViewController {
     
@@ -66,6 +67,10 @@ class LoginVC: UIViewController {
 //        starrtFrreeTrialBtn.layer.shadowOpacity = 0.5;
         starrtFrreeTrialBtn.clipsToBounds = false;
         
+        
+       // GIDSignIn.sharedInstance.delegate = self
+        
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool{
@@ -124,22 +129,33 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func googleSignInBtn_Action(_ sender: UIButton) {
-        
+        GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
+            guard error == nil else { return }
+            
+            // If sign in succeeded, display the app's main content View.
+          }
+    }
+    
+    func sign(_ signIn: GIDSignIn! , didsignInFor user: GIDGoogleUser , withError error: Error!){
+        if error != nil{
+            print(user.userID!)
+        }
+            
     }
     
     @IBAction func facebookSignInBtn_Action(_ sender: UIButton) {
         
     }
     
-    @IBAction func linkedInSignInBtn_Action(_ sender: UIButton) {
-        linkedinHelper.authorizeSuccess({ (lsToken) in
-             print("Login success with LinkedIn. Token: \(lsToken)")
-         }, error: { (error) in
-             print("Encountered error with LinkedIn login: \(error.localizedDescription)")
-         }, cancel: {
-             print("User cancelled LinkedIn login")
-         })
-    }
+//    @IBAction func linkedInSignInBtn_Action(_ sender: UIButton) {
+//        linkedinHelper.authorizeSuccess({ (lsToken) in
+//             print("Login success with LinkedIn. Token: \(lsToken)")
+//         }, error: { (error) in
+//             print("Encountered error with LinkedIn login: \(error.localizedDescription)")
+//         }, cancel: {
+//             print("User cancelled LinkedIn login")
+//         })
+//    }
     
     @IBAction func starFreeTrialBtn_Action(_ sender: UIButton) {
         
