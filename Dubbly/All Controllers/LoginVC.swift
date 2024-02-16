@@ -7,8 +7,12 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
 
-class LoginVC: UIViewController {
+//import GoogleSignIn
+
+
+class LoginVC: UIViewController ,facebookBtnDelegate , GIDSignInDelegate {
     
     @IBOutlet weak var bacgoundImage: UIImageView!
     @IBOutlet weak var emailTextField: UITextField!
@@ -22,8 +26,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     
     let padding: CGFloat = 30.0
-//    let linkedinHelper = LinkedinSwiftHelper(configuration: LinkedinSwiftConfiguration(clientId: "YOUR_CLIENT_ID", clientSecret: "YOUR_CLIENT_SECRET", state: "YOUR_STATE", permissions: ["r_liteprofile", "r_emailaddress"], redirectUrl: "YOUR_REDIRECT_URL"))
-
+    //    let linkedinHelper = LinkedinSwiftHelper(configuration: LinkedinSwiftConfiguration(clientId: "YOUR_CLIENT_ID", clientSecret: "YOUR_CLIENT_SECRET", state: "YOUR_STATE", permissions: ["r_liteprofile", "r_emailaddress"], redirectUrl: "YOUR_REDIRECT_URL"))
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,9 +66,28 @@ class LoginVC: UIViewController {
         
         starrtFrreeTrialBtn.layer.cornerRadius = starrtFrreeTrialBtn.frame.size.width/2
         starrtFrreeTrialBtn.layer.cornerRadius = 10;
-//        starrtFrreeTrialBtn.layer.shadowOffset = CGSizeZero;
-//        starrtFrreeTrialBtn.layer.shadowOpacity = 0.5;
+        //        starrtFrreeTrialBtn.layer.shadowOffset = CGSizeZero;
+        //        starrtFrreeTrialBtn.layer.shadowOpacity = 0.5;
         starrtFrreeTrialBtn.clipsToBounds = false;
+        
+//        GIDSignIn.sharedInstance().delegate = self
+//        GIDSignIn.sharedInstance().presentingViewController = self
+        
+        if let token = AccessToken.current,
+           !token.isExpired {
+            // User is logged in, do work such as go to next view controller.
+        }
+        else{
+            let facebookBtn = FBLoginButton()
+            facebookBtn.center = view.center
+            facebookBtn.delegate = self
+            facebookBtn.permissions = ["public_profile", "email"]
+              
+            view.addSubview(facebookBtn)
+        }
+        
+
+//
         
     }
     
@@ -101,7 +124,7 @@ class LoginVC: UIViewController {
             if message.flag == 0 {
                 self.view.makeToast(message.message, duration: 5.0)
                 self.navigationController?.pushViewController(vc,
-                 animated: true)
+                                                              animated: true)
             }
             else if message.flag == 1 {
                 self.view.makeToast(message.message, duration: 5.0)
@@ -111,46 +134,76 @@ class LoginVC: UIViewController {
             }
         }
         
-//        if let vc = storyboard?.instantiateViewController(withIdentifier: "VideoVC") {
-//                navigationController?.pushViewController(vc, animated: true)
-//            }
+        //        if let vc = storyboard?.instantiateViewController(withIdentifier: "VideoVC") {
+        //                navigationController?.pushViewController(vc, animated: true)
+        //            }
     }
     
     
     @IBAction func forgetPassBtn_Action(_ sender: UIButton) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "ForgetPasswordVC") {
-                navigationController?.pushViewController(vc, animated: true)
-            }
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     @IBAction func googleSignInBtn_Action(_ sender: UIButton) {
+       // GIDSignIn.sharedInstance().signIn()
         
     }
-    
-    @IBAction func facebookSignInBtn_Action(_ sender: UIButton) {
+//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+//        if let error = error {
+//            print("Google sign in failed with error: \(error.localizedDescription)")
+//            return
+//        }
+//        func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+//            if let error = error {
+//                print("Google sign in failed with error: \(error.localizedDescription)")
+//                return
+//            }
+//            
+            
+    @IBAction func facebookSignInBtn_Action(_ facebookBtn: FBLoginButton, didCompleteWith result) {
+//                let loginButton = FBLoginButton()
+//                loginButton.center = view.center
+//                view.addSubview(loginButton)
+                
+
+        }
         
-    }
-    
-    @IBAction func linkedInSignInBtn_Action(_ sender: UIButton) {
-        linkedinHelper.authorizeSuccess({ (lsToken) in
-             print("Login success with LinkedIn. Token: \(lsToken)")
-         }, error: { (error) in
-             print("Encountered error with LinkedIn login: \(error.localizedDescription)")
-         }, cancel: {
-             print("User cancelled LinkedIn login")
-         })
-    }
-    
-    @IBAction func starFreeTrialBtn_Action(_ sender: UIButton) {
+        //    @IBAction func linkedInSignInBtn_Action(_ sender: UIButton) {
+        //        linkedinHelper.authorizeSuccess({ (lsToken) in
+        //             print("Login success with LinkedIn. Token: \(lsToken)")
+        //         }, error: { (error) in
+        //             print("Encountered error with LinkedIn login: \(error.localizedDescription)")
+        //         }, cancel: {
+        //             print("User cancelled LinkedIn login")
+        //         })
+        //    }
         
-    }
-    
-    @IBAction func doYouHaveAccBtn_Action(_ sender: UIButton) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterVC") {
+        @IBAction func starFreeTrialBtn_Action(_ sender: UIButton) {
+            
+        }
+        
+        @IBAction func doYouHaveAccBtn_Action(_ sender: UIButton) {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterVC") {
                 navigationController?.pushViewController(vc, animated: true)
             }
+        }
+        
     }
     
-}
+    
+    
+    // Add this to the header of your file, e.g. in ViewController.swift
+    
+    // Add this to the body
+//    class ViewController: UIViewController {
+//        override func viewDidLoad() {
+//            super.viewDidLoad()
+//        
+   //                 }
+  //  }
 
+    
+    
 

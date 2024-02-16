@@ -1,0 +1,14 @@
+Target dependency graph (5 targets)
+Target 'Pods-Dubbly' in project 'Pods'
+➜ Explicit dependency on target 'FBAEMKit' in project 'Pods'
+➜ Explicit dependency on target 'FBSDKCoreKit' in project 'Pods'
+➜ Explicit dependency on target 'FBSDKCoreKit_Basics' in project 'Pods'
+➜ Explicit dependency on target 'FBSDKLoginKit' in project 'Pods'
+Target 'FBSDKLoginKit' in project 'Pods'
+➜ Explicit dependency on target 'FBSDKCoreKit' in project 'Pods'
+Target 'FBSDKCoreKit' in project 'Pods'
+➜ Explicit dependency on target 'FBAEMKit' in project 'Pods'
+➜ Explicit dependency on target 'FBSDKCoreKit_Basics' in project 'Pods'
+Target 'FBAEMKit' in project 'Pods'
+➜ Explicit dependency on target 'FBSDKCoreKit_Basics' in project 'Pods'
+Target 'FBSDKCoreKit_Basics' in project 'Pods' (no dependencies)

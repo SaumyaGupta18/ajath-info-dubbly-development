@@ -1,0 +1,56 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e989176bbd636a13f9582f645f1f0315a8f"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98828dc99e68108e01848c924cebb9b2d5"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98f52a87663484c8c5c2fb376dbe85216c"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9851e8fd886951a87551ea0aff618ed4ec"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98160d1e952698e1c0df6138b95deaa99f"
+    }
+  ],
+  "containerPath" : "/Users/shachish/Documents/Saumya_projects/Dubbly 2/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/shachish/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/shachish/Library/Developer/Xcode/DerivedData/Pods-dyrhrldufeehyzbpaumuwxpentwo/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/shachish/Library/Developer/Xcode/DerivedData/Pods-dyrhrldufeehyzbpaumuwxpentwo/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

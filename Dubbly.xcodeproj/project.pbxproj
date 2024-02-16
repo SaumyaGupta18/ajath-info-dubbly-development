@@ -79,15 +79,19 @@
 		28C1E77C2B77ADAC00BCF208 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1E77B2B77ADAC00BCF208 /* Loader.swift */; };
 		28C1E77E2B77AFBD00BCF208 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1E77D2B77AFBC00BCF208 /* Constant.swift */; };
 		28C1E7802B77C7EF00BCF208 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1E77F2B77C7EE00BCF208 /* Padding.swift */; };
+		2F27A5D12B7F1F8400CA458D /* UploadVideofileViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F27A5D02B7F1F8400CA458D /* UploadVideofileViewVC.swift */; };
 		2F7F53722B737FD600BAB271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F53712B737FD600BAB271 /* AppDelegate.swift */; };
 		2F7F53742B737FD600BAB271 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F53732B737FD600BAB271 /* SceneDelegate.swift */; };
 		2F7F53762B737FD600BAB271 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F53752B737FD600BAB271 /* LoginVC.swift */; };
 		2F7F53792B737FD600BAB271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F53772B737FD600BAB271 /* Main.storyboard */; };
 		2F7F537B2B737FD900BAB271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F537A2B737FD900BAB271 /* Assets.xcassets */; };
 		2F7F537E2B737FD900BAB271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F537C2B737FD900BAB271 /* LaunchScreen.storyboard */; };
+		2FF78E1D2B7E09F0002282FA /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF78E1C2B7E09F0002282FA /* DashboardVC.swift */; };
+		52F2B5E5EF2D1D812C8D6F5B /* Pods_Dubbly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74149BA912BF494B84159CC /* Pods_Dubbly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12B2789F45267CA1B34AD5E7 /* Pods-Dubbly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dubbly.release.xcconfig"; path = "Target Support Files/Pods-Dubbly/Pods-Dubbly.release.xcconfig"; sourceTree = "<group>"; };
 		18003A092B74A67600460936 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
 		18003A0B2B74A85900460936 /* OtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpVC.swift; sourceTree = "<group>"; };
 		181637832B74B803002F4151 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		28C1E77B2B77ADAC00BCF208 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		28C1E77D2B77AFBC00BCF208 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		28C1E77F2B77C7EE00BCF208 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		2F0A28C62B7F46C300AE30FB /* Dubbly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dubbly.entitlements; sourceTree = "<group>"; };
+		2F27A5D02B7F1F8400CA458D /* UploadVideofileViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideofileViewVC.swift; sourceTree = "<group>"; };
 		2F7F536E2B737FD600BAB271 /* Dubbly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dubbly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7F53712B737FD600BAB271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7F53732B737FD600BAB271 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 		2F7F537A2B737FD900BAB271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F7F537D2B737FD900BAB271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F7F537F2B737FD900BAB271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF78E1C2B7E09F0002282FA /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		D74149BA912BF494B84159CC /* Pods_Dubbly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dubbly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5A5AA20E9F7739A9275BC9 /* Pods-Dubbly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dubbly.debug.xcconfig"; path = "Target Support Files/Pods-Dubbly/Pods-Dubbly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +184,7 @@
 				1893F3182B7A391E0042B3FA /* AWSKinesisVideoWebRTCStorage in Frameworks */,
 				1893F3282B7A391E0042B3FA /* AWSPolly in Frameworks */,
 				1893F2E62B7A391E0042B3FA /* AWSAppleSignIn in Frameworks */,
+				52F2B5E5EF2D1D812C8D6F5B /* Pods_Dubbly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +209,8 @@
 				283B9BE22B77EE0200BF988D /* TermsAndConditionsVC.swift */,
 				283B9BE42B77EEAE00BF988D /* PrivacyPolicyVC.swift */,
 				283B9BE62B77EED400BF988D /* DisclaimerVC.swift */,
+				2FF78E1C2B7E09F0002282FA /* DashboardVC.swift */,
+				2F27A5D02B7F1F8400CA458D /* UploadVideofileViewVC.swift */,
 			);
 			path = "All Controllers";
 			sourceTree = "<group>";
@@ -238,6 +250,8 @@
 			children = (
 				2F7F53702B737FD600BAB271 /* Dubbly */,
 				2F7F536F2B737FD600BAB271 /* Products */,
+				CF288A6D53422B897FB843D9 /* Pods */,
+				5B4A9AA5B52142930940CF33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +266,7 @@
 		2F7F53702B737FD600BAB271 /* Dubbly */ = {
 			isa = PBXGroup;
 			children = (
+				2F0A28C62B7F46C300AE30FB /* Dubbly.entitlements */,
 				28C1E77A2B77AC7C00BCF208 /* Helper */,
 				2F7F53712B737FD600BAB271 /* AppDelegate.swift */,
 				2F7F53732B737FD600BAB271 /* SceneDelegate.swift */,
@@ -266,6 +281,23 @@
 			path = Dubbly;
 			sourceTree = "<group>";
 		};
+		5B4A9AA5B52142930940CF33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D74149BA912BF494B84159CC /* Pods_Dubbly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF288A6D53422B897FB843D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED5A5AA20E9F7739A9275BC9 /* Pods-Dubbly.debug.xcconfig */,
+				12B2789F45267CA1B34AD5E7 /* Pods-Dubbly.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,9 +305,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F7F53822B737FD900BAB271 /* Build configuration list for PBXNativeTarget "Dubbly" */;
 			buildPhases = (
+				0B54274B892F4EAC3EA1A671 /* [CP] Check Pods Manifest.lock */,
 				2F7F536A2B737FD600BAB271 /* Sources */,
 				2F7F536B2B737FD600BAB271 /* Frameworks */,
 				2F7F536C2B737FD600BAB271 /* Resources */,
+				0F83B3A3FD87C03A8ED1571E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -362,9 +396,9 @@
 			);
 			mainGroup = 2F7F53652B737FD600BAB271;
 			packageReferences = (
-				18B751D22B79E00800E3567B /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				18B751D82B79E4A700E3567B /* XCRemoteSwiftPackageReference "Alamofire" */,
-				1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+				18B751D22B79E00800E3567B /* XCRemoteSwiftPackageReference "Toast-Swift.git" */,
+				18B751D82B79E4A700E3567B /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */,
 			);
 			productRefGroup = 2F7F536F2B737FD600BAB271 /* Products */;
 			projectDirPath = "";
@@ -388,6 +422,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B54274B892F4EAC3EA1A671 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dubbly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F83B3A3FD87C03A8ED1571E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dubbly/Pods-Dubbly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dubbly/Pods-Dubbly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dubbly/Pods-Dubbly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F7F536A2B737FD600BAB271 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -399,6 +475,7 @@
 				18B751D12B79DF2000E3567B /* RegisterModel.swift in Sources */,
 				185057B82B76516900FCECC6 /* HistoryVC.swift in Sources */,
 				18ADADB92B74A26000F8624E /* AboutVC.swift in Sources */,
+				2F27A5D12B7F1F8400CA458D /* UploadVideofileViewVC.swift in Sources */,
 				18B751CF2B79DD2600E3567B /* LoginModel.swift in Sources */,
 				2F7F53762B737FD600BAB271 /* LoginVC.swift in Sources */,
 				2F7F53722B737FD600BAB271 /* AppDelegate.swift in Sources */,
@@ -406,6 +483,7 @@
 				181637842B74B803002F4151 /* VideoVC.swift in Sources */,
 				18003A0A2B74A67600460936 /* ForgetPasswordVC.swift in Sources */,
 				28C1E77E2B77AFBD00BCF208 /* Constant.swift in Sources */,
+				2FF78E1D2B7E09F0002282FA /* DashboardVC.swift in Sources */,
 				1816378A2B74C5B5002F4151 /* RegisterVC.swift in Sources */,
 				18B751DC2B79E61600E3567B /* OTPModel.swift in Sources */,
 				2F7F53742B737FD600BAB271 /* SceneDelegate.swift in Sources */,
@@ -565,9 +643,11 @@
 		};
 		2F7F53832B737FD900BAB271 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5A5AA20E9F7739A9275BC9 /* Pods-Dubbly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dubbly/Dubbly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NV72JB2SDD;
@@ -593,9 +673,11 @@
 		};
 		2F7F53842B737FD900BAB271 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B2789F45267CA1B34AD5E7 /* Pods-Dubbly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dubbly/Dubbly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NV72JB2SDD;
@@ -643,7 +725,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+		1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm.git";
 			requirement = {
@@ -651,7 +733,7 @@
 				kind = branch;
 			};
 		};
-		18B751D22B79E00800E3567B /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+		18B751D22B79E00800E3567B /* XCRemoteSwiftPackageReference "Toast-Swift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
 			requirement = {
@@ -659,7 +741,7 @@
 				kind = branch;
 			};
 		};
-		18B751D82B79E4A700E3567B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		18B751D82B79E4A700E3567B /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -672,247 +754,247 @@
 /* Begin XCSwiftPackageProductDependency section */
 		1893F2E32B7A391E0042B3FA /* AWSAPIGateway */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSAPIGateway;
 		};
 		1893F2E52B7A391E0042B3FA /* AWSAppleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSAppleSignIn;
 		};
 		1893F2E72B7A391E0042B3FA /* AWSAuthCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSAuthCore;
 		};
 		1893F2E92B7A391E0042B3FA /* AWSAuthUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSAuthUI;
 		};
 		1893F2EB2B7A391E0042B3FA /* AWSAutoScaling */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSAutoScaling;
 		};
 		1893F2ED2B7A391E0042B3FA /* AWSChimeSDKIdentity */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSChimeSDKIdentity;
 		};
 		1893F2EF2B7A391E0042B3FA /* AWSChimeSDKMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSChimeSDKMessaging;
 		};
 		1893F2F12B7A391E0042B3FA /* AWSCloudWatch */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSCloudWatch;
 		};
 		1893F2F32B7A391E0042B3FA /* AWSCognitoAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSCognitoAuth;
 		};
 		1893F2F52B7A391E0042B3FA /* AWSCognitoIdentityProvider */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSCognitoIdentityProvider;
 		};
 		1893F2F72B7A391E0042B3FA /* AWSCognitoIdentityProviderASF */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSCognitoIdentityProviderASF;
 		};
 		1893F2F92B7A391E0042B3FA /* AWSComprehend */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSComprehend;
 		};
 		1893F2FB2B7A391E0042B3FA /* AWSConnect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSConnect;
 		};
 		1893F2FD2B7A391E0042B3FA /* AWSConnectParticipant */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSConnectParticipant;
 		};
 		1893F2FF2B7A391E0042B3FA /* AWSCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSCore;
 		};
 		1893F3012B7A391E0042B3FA /* AWSDynamoDB */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSDynamoDB;
 		};
 		1893F3032B7A391E0042B3FA /* AWSEC2 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSEC2;
 		};
 		1893F3052B7A391E0042B3FA /* AWSElasticLoadBalancing */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSElasticLoadBalancing;
 		};
 		1893F3072B7A391E0042B3FA /* AWSFacebookSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSFacebookSignIn;
 		};
 		1893F3092B7A391E0042B3FA /* AWSGoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSGoogleSignIn;
 		};
 		1893F30B2B7A391E0042B3FA /* AWSIoT */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSIoT;
 		};
 		1893F30D2B7A391E0042B3FA /* AWSKMS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSKMS;
 		};
 		1893F30F2B7A391E0042B3FA /* AWSKinesis */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSKinesis;
 		};
 		1893F3112B7A391E0042B3FA /* AWSKinesisVideo */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSKinesisVideo;
 		};
 		1893F3132B7A391E0042B3FA /* AWSKinesisVideoArchivedMedia */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSKinesisVideoArchivedMedia;
 		};
 		1893F3152B7A391E0042B3FA /* AWSKinesisVideoSignaling */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSKinesisVideoSignaling;
 		};
 		1893F3172B7A391E0042B3FA /* AWSKinesisVideoWebRTCStorage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSKinesisVideoWebRTCStorage;
 		};
 		1893F3192B7A391E0042B3FA /* AWSLambda */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSLambda;
 		};
 		1893F31B2B7A391E0042B3FA /* AWSLex */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSLex;
 		};
 		1893F31D2B7A391E0042B3FA /* AWSLocationXCF */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSLocationXCF;
 		};
 		1893F31F2B7A391E0042B3FA /* AWSLogs */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSLogs;
 		};
 		1893F3212B7A391E0042B3FA /* AWSMachineLearning */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSMachineLearning;
 		};
 		1893F3232B7A391E0042B3FA /* AWSMobileClientXCF */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSMobileClientXCF;
 		};
 		1893F3252B7A391E0042B3FA /* AWSPinpoint */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSPinpoint;
 		};
 		1893F3272B7A391E0042B3FA /* AWSPolly */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSPolly;
 		};
 		1893F3292B7A391E0042B3FA /* AWSRekognition */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSRekognition;
 		};
 		1893F32B2B7A391E0042B3FA /* AWSS3 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSS3;
 		};
 		1893F32D2B7A391E0042B3FA /* AWSSES */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSSES;
 		};
 		1893F32F2B7A391E0042B3FA /* AWSSNS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSSNS;
 		};
 		1893F3312B7A391E0042B3FA /* AWSSQS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSSQS;
 		};
 		1893F3332B7A391E0042B3FA /* AWSSageMakerRuntime */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSSageMakerRuntime;
 		};
 		1893F3352B7A391E0042B3FA /* AWSSimpleDB */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSSimpleDB;
 		};
 		1893F3372B7A391E0042B3FA /* AWSTextract */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSTextract;
 		};
 		1893F3392B7A391E0042B3FA /* AWSTranscribe */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSTranscribe;
 		};
 		1893F33B2B7A391E0042B3FA /* AWSTranscribeStreaming */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSTranscribeStreaming;
 		};
 		1893F33D2B7A391E0042B3FA /* AWSTranslate */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSTranslate;
 		};
 		1893F33F2B7A391E0042B3FA /* AWSUserPoolsSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			package = 1893F2E22B7A391E0042B3FA /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm.git" */;
 			productName = AWSUserPoolsSignIn;
 		};
 		18B751D32B79E00800E3567B /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 18B751D22B79E00800E3567B /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			package = 18B751D22B79E00800E3567B /* XCRemoteSwiftPackageReference "Toast-Swift.git" */;
 			productName = Toast;
 		};
 		18B751D92B79E4A700E3567B /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 18B751D82B79E4A700E3567B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 18B751D82B79E4A700E3567B /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
