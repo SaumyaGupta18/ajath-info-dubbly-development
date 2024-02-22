@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Toast
+import SVProgressHUD
 
 class RegisterVC: UIViewController {
     
@@ -103,23 +104,32 @@ class RegisterVC: UIViewController {
             })
         }
         
-        guard let name = self.nameRegisterTextField.text else{return}
-        guard let email = self.emailRegisterTextField.text else{return}
-        guard let number = self.mobileRegisterTextField.text else{return}
-        guard let password = self.passRegisterTextField.text else{return}
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AboutVC") as! AboutVC
-        let register = RegisterModel(name: name, email: email, phone: number, password: password)
-        APIManager.sharedInstance.callingRegisterAPI(register: register){
-            (message) in
-            if message == ""{
-                self.navigationController?.pushViewController(vc,
-                 animated: true)
-                self.view.makeToast("Please Try Again")
-            }
-            else{
-                self.view.makeToast(message)
-            }
-        }
+        
+        guard let name = nameRegisterTextField.text,
+            let email = emailRegisterTextField.text,
+            let phone = mobileRegisterTextField.text,
+            let password = passRegisterTextField.text else {
+              return
+          }
+              signup(name: name, email: email, phone: phone, password: password)
+//              signup(username: username, email: email, password: password)
+        
+//        guard let name = self.nameRegisterTextField.text else{return}
+//        guard let email = self.emailRegisterTextField.text else{return}
+//        guard let number = self.mobileRegisterTextField.text else{return}
+//        guard let password = self.passRegisterTextField.text else{return}
+////        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AboutVC") as! AboutVC
+//        let register = RegisterModel(name: name, email: email, phone: number, password: password)
+//        APIManager.sharedInstance.callingRegisterAPI(register: register){
+//            (message) in
+//            if message == ""{
+////                self.navigationController?.pushViewController(vc, animated: true)
+//                self.view.makeToast("Please Try Again")
+//            }
+//            else{
+//                self.view.makeToast(message)
+//            }
+//        }
         
 //        if let vc = storyboard?.instantiateViewController(withIdentifier: "AboutVC") {
 //                navigationController?.pushViewController(vc, animated: true)
@@ -131,6 +141,59 @@ class RegisterVC: UIViewController {
                 navigationController?.pushViewController(vc, animated: true)
             }
     }
+    
+    
+    func signup(name: String, email: String, phone: String, password: String) {
+          
+            SVProgressHUD.show()
+            var request = URLRequest(url: URL(string: BASE_URL)!)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+            let requestBody: [String: Any] = [
+                "name": name,
+                "email": email,
+                "phone": phone,
+                "password": password
+            ]
+
+            guard let requestBodyData = try? JSONSerialization.data(withJSONObject: requestBody) else {
+                
+                SVProgressHUD.dismiss()
+
+                return
+            
+            }
+
+            request.httpBody = requestBodyData
+
+            URLSession.shared.dataTask(with: request) { data, response, error in
+               
+                DispatchQueue.main.async {
+                            SVProgressHUD.dismiss()
+                        }
+                
+                if let error = error {
+                    print("Error: \(error)")
+                    return
+                }
+
+                guard let httpResponse = response as? HTTPURLResponse,
+                      (200...299).contains(httpResponse.statusCode) else {
+                    print("HTTP Error")
+                    return
+                }
+
+                if let data = data {
+                    do {
+                        let jsonResponse = try JSONSerialization.jsonObject(with: data, options: [])
+                        print("Response: \(jsonResponse)")
+                    } catch {
+                        print("JSON Error: \(error)")
+                    }
+                }
+            }.resume()
+        }
     
     
 }

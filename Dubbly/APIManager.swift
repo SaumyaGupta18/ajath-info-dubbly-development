@@ -57,7 +57,7 @@ class APIManager{
             let headers: HTTPHeaders = [
                 .contentType("application/json")
             ]
-            AF.request("\(BASE_URL)/account/api/register", method: .post, parameters: register, encoder: JSONParameterEncoder.default, headers: headers).response{ response in
+            AF.request("\(BASE_URL)/api/api/register", method: .post, parameters: register, encoder: JSONParameterEncoder.default, headers: headers).response{ response in
                 debugPrint(response)
                 switch response.result{
                 case .success(let data):
@@ -85,7 +85,7 @@ class APIManager{
             let headers: HTTPHeaders = [
                 .contentType("application/json")
             ]
-            AF.request("\(BASE_URL)/account/api/about", method: .post, parameters: about, encoder: JSONParameterEncoder.default, headers: headers).response{ response in
+            AF.request("\(BASE_URL)/api/api/about", method: .post, parameters: about, encoder: JSONParameterEncoder.default, headers: headers).response{ response in
                 debugPrint(response)
                 switch response.result{
                 case .success(let data):
@@ -113,7 +113,7 @@ class APIManager{
         let headers: HTTPHeaders = [
             .contentType("application/json")
         ]
-        AF.request("\(BASE_URL)/account/api/login", method: .post, parameters: login, encoder: JSONParameterEncoder.default, headers: headers).response{response in
+        AF.request("\(BASE_URL)/api/api/login", method: .post, parameters: login, encoder: JSONParameterEncoder.default, headers: headers).response{response in
             debugPrint(response)
             switch response.result{
             case .success(let data):
@@ -145,7 +145,7 @@ class APIManager{
         let headers: HTTPHeaders = [
             .contentType("application/json")
         ]
-        AF.request("\(BASE_URL)/account/api/forgotpass", method: .post, parameters: forgetPassword, encoder: JSONParameterEncoder.default, headers: headers).response{response in
+        AF.request("\(BASE_URL)/api/api/forgotpass", method: .post, parameters: forgetPassword, encoder: JSONParameterEncoder.default, headers: headers).response{response in
             debugPrint(response)
             switch response.result{
             case .success(let data):
@@ -175,7 +175,7 @@ class APIManager{
         let headers: HTTPHeaders = [
             .contentType("application/json")
         ]
-        AF.request("\(BASE_URL)/account/api/otpverify", method: .post, parameters: verify, encoder: JSONParameterEncoder.default, headers: headers).response{response in
+        AF.request("\(BASE_URL)/api/api/otpverify", method: .post, parameters: verify, encoder: JSONParameterEncoder.default, headers: headers).response{response in
             debugPrint(response)
             switch response.result{
             case .success(let data):
@@ -212,7 +212,7 @@ class APIManager{
             .authorization("Bearer \(self.storage.getAccessToken())"),
             .contentType("application/json")
         ]
-        AF.request("\(BASE_URL)/account/api/resetpass", method: .post, parameters: reset, encoder: JSONParameterEncoder.default, headers: headers).response{response in
+        AF.request("\(BASE_URL)/api/api/resetpass", method: .post, parameters: reset, encoder: JSONParameterEncoder.default, headers: headers).response{response in
             debugPrint(response)
             switch response.result{
             case .success(let data):

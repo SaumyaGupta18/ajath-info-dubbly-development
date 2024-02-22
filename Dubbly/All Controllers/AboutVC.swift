@@ -98,24 +98,24 @@ class AboutVC: UIViewController {
 //            let alert = UIAlertController(title: "Alert", message: "Your password is empty", preferredStyle: .alert)
 //            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         }
-        
-        guard let name = self.nameTextField.text else{return}
-        guard let role = self.roleTextfield.text else{return}
-        guard let age = self.ageTextField.text else{return}
-        guard let country = self.countryTextField.text else{return}
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VideoVC") as! VideoVC
-        let about = AboutModel(name: name, role: role, age: age, country: country)
-        APIManager.sharedInstance.callingAboutAPI(about: about){
-            (message) in
-            if message == ""{
-                self.navigationController?.pushViewController(vc,
-                 animated: true)
-                self.view.makeToast("Please Try Again")
-            }
-            else{
-                self.view.makeToast(message)
-            }
-        }
+//        
+//        guard let name = self.nameTextField.text else{return}
+//        guard let role = self.roleTextfield.text else{return}
+//        guard let age = self.ageTextField.text else{return}
+//        guard let country = self.countryTextField.text else{return}
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "VideoVC") as! VideoVC
+//        let about = AboutModel(name: name, role: role, age: age, country: country)
+//        APIManager.sharedInstance.callingAboutAPI(about: about){
+//            (message) in
+//            if message == ""{
+//                self.navigationController?.pushViewController(vc,
+//                 animated: true)
+//                self.view.makeToast("Please Try Again")
+//            }
+//            else{
+//                self.view.makeToast(message)
+//            }
+//        }
         
 //        if let vc = storyboard?.instantiateViewController(withIdentifier: "VideoVC") {
 //                navigationController?.pushViewController(vc, animated: true)

@@ -7,12 +7,9 @@
 
 import Foundation
 import UIKit
-import FBSDKLoginKit
+import SVProgressHUD
 
-//import GoogleSignIn
-
-
-class LoginVC: UIViewController ,facebookBtnDelegate , GIDSignInDelegate {
+class LoginVC: UIViewController {
     
     @IBOutlet weak var bacgoundImage: UIImageView!
     @IBOutlet weak var emailTextField: UITextField!
@@ -70,25 +67,26 @@ class LoginVC: UIViewController ,facebookBtnDelegate , GIDSignInDelegate {
         //        starrtFrreeTrialBtn.layer.shadowOpacity = 0.5;
         starrtFrreeTrialBtn.clipsToBounds = false;
         
+//        GIDSignIn.sharedInstance()?.presentingViewController = self
+//        GIDSignIn.sharedInstance()?.delegate = self
+//        GIDSignIn.sharedInstance()?.uiDelegate = self
+        
 //        GIDSignIn.sharedInstance().delegate = self
 //        GIDSignIn.sharedInstance().presentingViewController = self
         
-        if let token = AccessToken.current,
-           !token.isExpired {
-            // User is logged in, do work such as go to next view controller.
-        }
-        else{
-            let facebookBtn = FBLoginButton()
-            facebookBtn.center = view.center
-            facebookBtn.delegate = self
-            facebookBtn.permissions = ["public_profile", "email"]
-              
-            view.addSubview(facebookBtn)
-        }
-        
-
+//        if let token = AccessToken.current,
+//           !token.isExpired {
+//            // User is logged in, do work such as go to next view controller.
+//        }
+//        else{
+//            let facebookBtn = FBLoginButton()
+//            facebookBtn.center = view.center
+//            facebookBtn.delegate = self
+//            facebookBtn.permissions = ["public_profile", "email"]
+//              
+//            view.addSubview(facebookBtn)
+//        }
 //
-        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool{
@@ -112,6 +110,7 @@ class LoginVC: UIViewController ,facebookBtnDelegate , GIDSignInDelegate {
             })
         }
         
+        SVProgressHUD.show()
         guard let email = self.emailTextField.text else { return }
         guard let password = self.passTextField.text else { return }
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "VideoVC") as! VideoVC
@@ -120,7 +119,7 @@ class LoginVC: UIViewController ,facebookBtnDelegate , GIDSignInDelegate {
             (message) in
             print("Flag: \(message.flag)")
             print("Message: \(message.message)")
-            
+            SVProgressHUD.dismiss()
             if message.flag == 0 {
                 self.view.makeToast(message.message, duration: 5.0)
                 self.navigationController?.pushViewController(vc,
@@ -146,27 +145,22 @@ class LoginVC: UIViewController ,facebookBtnDelegate , GIDSignInDelegate {
         }
     }
     
-    @IBAction func googleSignInBtn_Action(_ sender: UIButton) {
-       // GIDSignIn.sharedInstance().signIn()
-        
+    @IBAction func googleSignInBtn_Action(_ sender: Any) {
+//        GIDSignIn.sharedInstance().signIn()
     }
 //    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
 //        if let error = error {
-//            print("Google sign in failed with error: \(error.localizedDescription)")
+//            print("Google sign in error: \(error.localizedDescription)")
 //            return
 //        }
-//        func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-//            if let error = error {
-//                print("Google sign in failed with error: \(error.localizedDescription)")
-//                return
-//            }
+////        guard let authentication = user.authentication else { return }
+////        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+//    }
+//    
+//    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+//    }
 //            
-            
-    @IBAction func facebookSignInBtn_Action(_ facebookBtn: FBLoginButton, didCompleteWith result) {
-//                let loginButton = FBLoginButton()
-//                loginButton.center = view.center
-//                view.addSubview(loginButton)
-                
+    @IBAction func facebookSignInBtn_Action(_ sender: UIButton) {
 
         }
         
@@ -192,18 +186,4 @@ class LoginVC: UIViewController ,facebookBtnDelegate , GIDSignInDelegate {
         
     }
     
-    
-    
-    // Add this to the header of your file, e.g. in ViewController.swift
-    
-    // Add this to the body
-//    class ViewController: UIViewController {
-//        override func viewDidLoad() {
-//            super.viewDidLoad()
-//        
-   //                 }
-  //  }
-
-    
-    
-
+//
